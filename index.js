@@ -22,4 +22,4 @@ const flash = (req, res, next) => {
   next()
 }
 
-exports = flash
+exports = module.exports = flash
