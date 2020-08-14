@@ -1,5 +1,5 @@
 {
-  "name": "flash-messages",
+  "name": "message-flash",
   "version": "1.0.0",
   "description": "Promise based flash message middleware for express.",
   "main": "index.js",
