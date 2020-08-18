@@ -1,21 +1,26 @@
 const flash = (req, res, next) => {
   req.flash = (type, message) => {
-    const msg = {}
     return new Promise((resolve, reject) => {
+      if (!req.session) reject('You are not using express-session')
+
       if (type && message) {
-        const message = {
-          type,
-          message
+        const newMessage = {
+          type: type,
+          text: message
         }
-        msg = message
+        req.session.message = newMessage
         resolve()
       } else if (type) {
-        if (type === msg.type) {
-          resolve(msg)
+        if (type === req.session.message.type) {
+          const resolved = req.session.message.text
+          req.session.message = null
+          resolve(resolved)
         }
         reject(`No messages with type ${type}`)
       } else {
-        reject()
+        const resolved = req.session.message
+        req.session.message = null
+        resolve(resolved)
       }
     })
   }

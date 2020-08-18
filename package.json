@@ -1,11 +1,17 @@
 {
   "name": "message-flash",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Promise based flash message middleware for express.",
   "main": "index.js",
-  "scripts": {
-  },
-  "keywords": [],
+  "scripts": {},
+  "keywords": [
+    "experess",
+    "middleware",
+    "flash",
+    "messages",
+    "flash-messages",
+    "node"
+  ],
   "author": "Jorge Gallegos",
   "license": "MIT"
 }
