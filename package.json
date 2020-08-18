@@ -1,8 +1,8 @@
 {
   "name": "message-flash",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Promise based flash message middleware for express.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {},
   "keywords": [
     "experess",
