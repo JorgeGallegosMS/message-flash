@@ -1,5 +1,5 @@
 # message-flash
-Adds a promise based function to the request object for flash messages. Uses [express-session]('https://www.npmjs.com/package/express-session') to store a message for one redirect cycle. 
+Adds a promise based function to the request object for flash messages. Uses [express-session](https://www.npmjs.com/package/express-session) to store a message for one redirect cycle. 
 
 ```bash 
 npm i message-flash
