@@ -6,13 +6,7 @@ const flash = require('../src/index')
 
 const app = express()
 
-const hbs = exphbs.create({
-  helpers: {
-    ifEquals: function (arg1, arg2, options) {
-      return (arg1 == arg2) ? options.fn(this) : options.inverse(this)
-    }
-  }
-})
+const hbs = exphbs.create({})
 
 app.engine('handlebars', hbs.engine)
 app.set('view engine', 'handlebars')
