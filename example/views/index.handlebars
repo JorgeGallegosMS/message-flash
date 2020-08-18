@@ -1,0 +1,12 @@
+<h1>Flash messages</h1>
+{{#if message}}
+<div id='message' class="ui {{ message.type }} message">
+  <i class="close icon"></i>
+  <div class="header">
+    {{message.text}}
+  </div>
+</div>
+{{/if}}
+<a class="ui green button" href="/success">Success</a>
+<a class="ui red button" href="/error">Error</a>
+<a class="ui blue button" href="/info">Info</a>
