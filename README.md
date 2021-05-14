@@ -1,7 +1,7 @@
 # message-flash
 
 ![npm version](https://img.shields.io/npm/v/message-flash)
-![npm version](https://img.shields.io/npm/dt/message-flash)
+![downloads](https://img.shields.io/npm/dt/message-flash)
 
 Adds a promise based function to the request object for flash messages. Uses [express-session](https://www.npmjs.com/package/express-session) to store a message for one redirect cycle.
 
